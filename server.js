@@ -4,7 +4,6 @@ const server = express()
 
 server.get('/', async function (req, res) {
    const response = await app.getData()
-   console.log(response)
    res.send(response)
 })
 
